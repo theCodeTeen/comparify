@@ -1,0 +1,248 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <title>Dashboard</title>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css">
+        <link rel="stylesheet" href="./../css/admin.css">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css">
+    </head>
+    <body>
+        <div class="container-fluid header">
+            <div class="row logo-nav-row">
+                <div class="col-lg-3 col-md-4 col-4 img-box">
+                    <img src="./../images/colorLogoCropped.jpg">
+                </div>
+                <div class="col-md-1 col-lg-3 col-1 logo-space-row">
+                </div>
+                <div class="col-md-7 col-lg-6 col-7 ncover">
+                    <!-- <a class="nlink" href="index.html">Logout</a>
+                    <a class="nlink" href="contact.html">Contact us</a> -->
+                    <a class="nlink">
+                        <span class="loginBtn"><i class="bi bi-box-arrow-left"></i> Logout</span>
+                    </a>
+                </div>
+            </div>
+            <div class="row contact-text">
+                <div class="col-12 main-text">
+                    <h1>ADMIN DASHBOARD</h1>
+                </div>
+                <div class="col-12 sub-text">
+                    <p>Have a view to what's going on!</p>
+                </div>
+            </div>
+        </div>
+        <div class="container-fluid shade">
+        </div>
+        <div class="container-fluid statistics">
+			
+            <div class="row stats">
+                <div class="col-12 stat-head-title">
+                    <h3>STATISTICS</h3>
+                </div>
+
+                <div class="col-md-3 col-sm-6 col-12 stat-cont ">
+                    <div class="stat-cover">
+                        <div class="container-fluid">
+                            <div class="row">
+                                <div class="col-4 stat-icon">
+                                    <i class="bi bi-eye-fill"></i>
+                                </div>
+                                <div class="col-8 stat-detail">
+                                    <div class="stat-value" id="viewsCount">0</div>
+                                    <div class="stat-title">Views</div>
+                                </div> 
+                            </div>
+                        </div>     
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-6 col-12 stat-cont">
+                    <div class="stat-cover">
+                        <div class="container-fluid">
+                            <div class="row">
+                                <div class="col-4 stat-icon">
+                                    <i class="bi bi-search"></i>
+                                </div>
+                                <div class="col-8 stat-detail">
+                                    <div class="stat-value" id="searchesCount">0</div>
+                                    <div class="stat-title">Searches</div>
+                                </div> 
+                            </div>
+                        </div>     
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-6 col-12 stat-cont">
+                    <div class="stat-cover">
+                        <div class="container-fluid">
+                            <div class="row">
+                                <div class="col-4 stat-icon">
+                                    <i class="bi bi-arrow-up-right-circle-fill"></i>
+                                </div>
+                                <div class="col-8 stat-detail">
+                                    <div class="stat-value" id="redirectCount">0</div>
+                                    <div class="stat-title">Redirects</div>
+                                </div> 
+                            </div>
+                        </div>     
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-6 col-12 stat-cont">
+                    <div class="stat-cover">
+                        <div class="container-fluid">
+                            <div class="row">
+                                <div class="col-4 stat-icon">
+                                    <i class="bi bi-chat-dots-fill"></i>
+                                </div>
+                                <div class="col-8 stat-detail">
+                                    <div class="stat-value" id="msgCount">0</div>
+                                    <div class="stat-title">Messages</div>
+                                </div> 
+                            </div>
+                        </div>     
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+        <div class="container-fluid shade-2">
+        </div>
+        <div class="container-fluid messages-section ">
+            <div class="row message-head-row">
+                <div class="col-12 message-head-title">
+                    <h3>INBOX</h3>
+                </div>
+            </div>
+
+            <div class="row messages-row">
+<!-- 			
+                <div class="col-lg-4 col-sm-6 message-cont ">
+                    <div class="message-cover">
+                        <div class="sender-name">Dharmik bhadra <i class="bi bi-x-circle"></i></div>
+                    <div class="sender-email">whatsapp83trending@gmail.com</div>
+                    <div class="sender-desc">Hello, i am owner of abc incoparation i know spelling is wrong but thats fine so i wanted to tell you ahhaha eee bubu blabla heheheheheheh i dont know really but i am typing anyways</div>
+                    </div>     
+                </div>
+                <div class="col-lg-4 col-sm-6 message-cont ">
+                    <div class="message-cover">
+                        <div class="sender-name">Dharmik bhadra <i class="bi bi-x-circle"></i></div>
+                    <div class="sender-email">whatsapp83trending@gmail.com</div>
+                    <div class="sender-desc">Hello, i am ownsjnsjbshjbshbshbshjbshjshbjjsbshber of abc incoparation i know spelling is wrong but thats fine so i wanted to tell you ahhaha eee bubu blabla heheheheheheh i dont know really but i am typing anyways, Hello, i am ownsjnsjbshjbshbshbshjbshjshbjjsbshber of abc incoparation i know spelling is wrong but thats fine so i wanted to tell you ahhaha eee bubu blabla heheheheheheh i dont know really but i am typing anywaysHello, i am ownsjnsjbshjbshbshbshjbshjshbjjsbshber of abc incoparation i know spelling is wrong but thats fine so i wanted to tell you ahhaha eee bubu blabla heheheheheheh i dont know really but i am typing anyways</div>
+                    </div>     
+                </div>
+                <div class="col-lg-4 col-sm-6 message-cont ">
+                    <div class="message-cover">
+                        <div class="sender-name">Dharmik bhadra <i class="bi bi-x-circle"></i></div>
+                    <div class="sender-email">whatsapp83trending@gmail.com</div>
+                    <div class="sender-desc">Hello, i am owner of abc incoparation i know spelling is wrong but thats fine so i wanted to tell you ahhaha eee bubu blabla heheheheheheh i dont know really but i am typing anyways</div>
+                    </div>     
+                </div>
+                <div class="col-lg-4 col-sm-6 message-cont ">
+                    <div class="message-cover">
+                        <div class="sender-name">Dharmik bhadra <i class="bi bi-x-circle"></i></div>
+                    <div class="sender-email">whatsapp83trending@gmail.com</div>
+                    <div class="sender-desc">Hello, i am owner of abc incoparation i know spelling is wrong but thats fine so i wanted to tell you ahhaha eee bubu blabla heheheheheheh i dont know really but i am typing anyways</div>
+                    </div>     
+                </div> -->
+
+            </div>
+
+        </div>
+        <div class="container-fluid shade-4">
+        </div>
+        <div class="container-fluid set-add-section">
+            <div class="row set-head-section">
+                <div class="col-12">
+                    <h3>MANAGE ADVERTISEMENTS</h3>
+                </div>
+            </div>
+            <div class="row advert-row">
+                <div class="col-lg-4 advert-cont">
+                    <div class="add-url">
+                        <div class="add-url-form">
+                            <span class="add-url-label">Redirection url</span>
+                            <span class="add-url-btn"><i class="bi bi-plus-circle" id="advert1-upUrl"></i></span>
+                        </div>
+                        <input type="text" class="add-url-inp" id="advert1-id" placeholder="www.advertUrl.com" >
+                    </div>
+                    <div class="add-cover">
+                        
+                        <div class="add-img">
+                            <img src="./../images/advertisement.png" id="advert1">    
+                        </div>
+                        <div class="add-btns">
+                            <span class="delete-btn" id="advert1-del">Delete</span>
+                            <span class="upload-btn" id="advert1-up">Upload</span>
+                        </div>
+                    </div>
+                    
+                </div>
+                <div class="col-lg-4 advert-cont">
+                    <div class="add-url">
+                        <div class="add-url-form">
+                            <span class="add-url-label">Redirection url</span>
+                            <span class="add-url-btn"><i class="bi bi-plus-circle" id="advert2-upUrl"></i></span>
+                        </div>
+                        <input type="text" class="add-url-inp" id="advert2-id" placeholder="www.advertUrl.com" >
+                    </div>
+                    <div class="add-cover">
+                        
+                        <div class="add-img">
+                            <img src="./../images/advertisement.png" id="advert2">    
+                        </div>
+                        <div class="add-btns">
+                            <span class="delete-btn" id="advert2-del">Delete</span>
+                            <span class="upload-btn" id="advert2-up">Upload</span>
+                        </div>
+                    </div>
+                    
+                </div>
+                <div class="col-lg-4 advert-cont">
+                    <div class="add-url">
+                        <div class="add-url-form">
+                            <span class="add-url-label">Redirection url</span>
+                            <span class="add-url-btn"><i class="bi bi-plus-circle" id="advert3-upUrl"></i></span>
+                        </div>
+                        <input type="text" class="add-url-inp" id="advert3-id"placeholder="www.advertUrl.com" >
+                    </div>
+                    <div class="add-cover">
+                        
+                        <div class="add-img">
+                            <img src="./../images/advertisement.png" id="advert3">    
+                        </div>
+                        <div class="add-btns">
+                            <span class="delete-btn" id="advert3-del">Delete</span>
+                            <span class="upload-btn" id="advert3-up">Upload</span>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+        <div class="container-fluid shade-3"></div>
+        <div class="container-fluid footer">
+            <div class="row foot-1">
+                <div class="col-6 fnavs">
+                    <a href="#">
+                        Top
+                    </a>
+                </div>
+                <div class="col-6 fsocial">
+                    <a href="https:\\www.instagram.com"><i class="bi bi-instagram"></i></a>
+                    <a href="https:\\www.facebook.com"><i class="bi bi-facebook"></i></a>
+                    <a href="https:\\www.twitter.com"><i class="bi bi-twitter"></i></a>
+                </div>
+            </div>
+            <div class="row foot-2">
+                <div class="col-12">
+                    Copyright &copy; modern devs 2021
+                </div>
+
+            </div>
+        </div>
+		<input type="file" id="file-select"></input>
+		<script type="text/javascript" src="../bundle.js"></script>
+		
+    </body>
+</html>

@@ -1,0 +1,215 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <title>Results</title>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css">
+        <link rel="stylesheet" href="./../css/results.css">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css">
+    </head>
+    <body>
+        <div class="container-fluid header">
+            <div class="row header-row">
+                <div class="col-sm-3 col-8 header-logo">
+                    <img src="./../images/colorLogoCropped.jpg">
+                </div>
+                <div class="col-lg-5 col-md-6 col-sm-8  col-1 header-search header-display">
+					<select name="sort" class="sortingBtn" id="sort">
+						<Option value="" selected="selected" >Sort By</Option>
+						<option value="rating">Rating</option>
+  						<option value="price">Price</option>
+					</select>
+                    <input type="text" placeholder="search product" id="searchbar">
+                    <span class="submitBtn" id="myBtn">   
+                         <i class="bi bi-search"></i>
+                    </span>
+                </div>
+                <div class="col-lg-4 col-md-3 col-sm-1 col-4 header-links">
+                    <a class="nlink" href="index.html"><i class="bi bi-house-door-fill"></i> Home</a>
+                    <a class="nlink" href="contact.html"><i class="bi bi-person-lines-fill"></i> Contact us</a>
+                    <!-- <a class="nlink" href="login.html">
+                        <span class="loginBtn">Login</span>
+                    </a> -->
+                    <div class="dropdown-nav ">
+                        <i class="bi bi-list"></i>
+                        <div class="nav-options nav-toggler">
+                            <a class="nlink" id="a1" href="index.html"><i class="bi bi-bookmark-star-fill"></i>Home</a>
+                            <a class="nlink" id="a2" href="contact.html"><i class="bi bi-person-lines-fill"></i> Contact us</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row header-row header-display-2">
+                <div class="col-12 header-search ">
+					<select name="sort" class="sortingBtn" id="sort">
+						<Option value="" selected="selected" >Sort By</Option>
+						<option value="rating">Rating</option>
+  						<option value="price">Price</option>
+					</select>
+                    <input type="text" placeholder="search product" id="searchbar">
+                    <span class="submitBtn" id="myBtn">   
+                         <i class="bi bi-search"></i>
+                    </span>
+                </div>
+            </div>
+        </div>
+        <div class="container-fluid shade-1"></div>
+        <div class="contaier-fluid main">
+            
+ <!--           <div class="row search-text-cover">
+                <div class="col-12 search-text">
+                    4 search results found for <b>"Iphone 12"</b>
+                </div>
+            </div>
+
+
+            <div class="row result-box">
+                <div class="col-3 result-img">
+                    <img src="https://rukminim1.flixcart.com/image/312/312/kg8avm80/mobile/r/h/z/apple-iphone-12-dummyapplefsn-original-imafwg8dqgncgbcb.jpeg?q=70">
+                </div>
+                <div class="col-9 result-details">
+                    <div class="result-title">
+                        <h3>APPLE iPhone 12 (Black, 256 GB)</h3>
+                    </div>
+                    <div class="result-desc">
+                        <span class="result-price">
+                            ₹92,900
+                        </span>
+                        <span class="result-rating">
+                            4.6 <i class="bi bi-star-fill"></i>
+                        </span>
+                    </div>
+                    <div class="result-seller">
+                        <span class="result-url">
+                            Intrested? <a href="www.flipkart.com/apple-iphone-12-black-256-gb/p/itm68421fa1c1121?pid=MOBFWBYZ7CR9FRHZ&lid=LSTMOBFWBYZ7CR9FRHZFXKLTD&marketplace=FLIPKART&q=iphone+12&store=tyy%2F4io&srno=s_1_1&otracker=search&otracker1=search&fm=SEARCH&iid=7c510046-89f8-407a-b20a-de026b98f397.MOBFWBYZ7CR9FRHZ.SEARCH&ppt=hp&ppn=homepage&ssid=2et7gw9prk0000001620198695774&qH=7b7504afcaf2e1ea">Click here</a>
+                        </span>
+                    </div>
+                    <div class="result-warning">
+                        <span class="result-msg">
+                            By clicking above button, you will be redirected to an external site!
+                        </span>
+                    </div>
+                </div>
+            </div>
+            <div class="row result-box">
+                <div class="col-3 result-img">
+                    <img src="https://rukminim1.flixcart.com/image/312/312/kg8avm80/mobile/r/h/z/apple-iphone-12-dummyapplefsn-original-imafwg8dqgncgbcb.jpeg?q=70">
+                </div>
+                <div class="col-9 result-details">
+                    <div class="result-title">
+                        <h3>APPLE iPhone 12 (Black, 256 GB)</h3>
+                    </div>
+                    <div class="result-desc">
+                        <span class="result-price">
+                            ₹92,900
+                        </span>
+                        <span class="result-rating">
+                            4.6 <i class="bi bi-star-fill"></i>
+                        </span>
+                    </div>
+                    <div class="result-seller">
+                        <span class="result-url">
+                            Intrested? <a href="www.flipkart.com/apple-iphone-12-black-256-gb/p/itm68421fa1c1121?pid=MOBFWBYZ7CR9FRHZ&lid=LSTMOBFWBYZ7CR9FRHZFXKLTD&marketplace=FLIPKART&q=iphone+12&store=tyy%2F4io&srno=s_1_1&otracker=search&otracker1=search&fm=SEARCH&iid=7c510046-89f8-407a-b20a-de026b98f397.MOBFWBYZ7CR9FRHZ.SEARCH&ppt=hp&ppn=homepage&ssid=2et7gw9prk0000001620198695774&qH=7b7504afcaf2e1ea">Click here</a>
+                        </span>
+                    </div>
+                    <div class="result-warning">
+                        <span class="result-msg">
+                            By clicking above button, you will be redirected to an external site!
+                        </span>
+                    </div>
+                </div>
+            </div>
+            <div class="row result-box">
+                <div class="col-3 result-img">
+                    <img src="https://rukminim1.flixcart.com/image/312/312/kg8avm80/mobile/r/h/z/apple-iphone-12-dummyapplefsn-original-imafwg8dqgncgbcb.jpeg?q=70">
+                </div>
+                <div class="col-9 result-details">
+                    <div class="result-title">
+                        <h3>APPLE iPhone 12 (Black, 256 GB)</h3>
+                    </div>
+                    <div class="result-desc">
+                        <span class="result-price">
+                            ₹92,900
+                        </span>
+                        <span class="result-rating">
+                            4.6 <i class="bi bi-star-fill"></i>
+                        </span>
+                    </div>
+                    <div class="result-seller">
+                        <span class="result-url">
+                            Intrested? <a href="www.flipkart.com/apple-iphone-12-black-256-gb/p/itm68421fa1c1121?pid=MOBFWBYZ7CR9FRHZ&lid=LSTMOBFWBYZ7CR9FRHZFXKLTD&marketplace=FLIPKART&q=iphone+12&store=tyy%2F4io&srno=s_1_1&otracker=search&otracker1=search&fm=SEARCH&iid=7c510046-89f8-407a-b20a-de026b98f397.MOBFWBYZ7CR9FRHZ.SEARCH&ppt=hp&ppn=homepage&ssid=2et7gw9prk0000001620198695774&qH=7b7504afcaf2e1ea">Click here</a>
+                        </span>
+                    </div>
+                    <div class="result-warning">
+                        <span class="result-msg">
+                            By clicking above button, you will be redirected to an external site!
+                        </span>
+                    </div>
+                </div>
+            </div>
+            <div class="row result-box">
+                <div class="col-3 result-img">
+                    <img src="https://rukminim1.flixcart.com/image/312/312/kg8avm80/mobile/r/h/z/apple-iphone-12-dummyapplefsn-original-imafwg8dqgncgbcb.jpeg?q=70">
+                </div>
+                <div class="col-9 result-details">
+                    <div class="result-title">
+                        <h3>APPLE iPhone 12 (Black, 256 GB)</h3>
+                    </div>
+                    <div class="result-desc">
+                        <span class="result-price">
+                            ₹92,900
+                        </span>
+                        <span class="result-rating">
+                            4.6 <i class="bi bi-star-fill"></i>
+                        </span>
+                    </div>
+                    <div class="result-seller">
+                        <span class="result-url">
+                            Intrested? <a href="www.flipkart.com/apple-iphone-12-black-256-gb/p/itm68421fa1c1121?pid=MOBFWBYZ7CR9FRHZ&lid=LSTMOBFWBYZ7CR9FRHZFXKLTD&marketplace=FLIPKART&q=iphone+12&store=tyy%2F4io&srno=s_1_1&otracker=search&otracker1=search&fm=SEARCH&iid=7c510046-89f8-407a-b20a-de026b98f397.MOBFWBYZ7CR9FRHZ.SEARCH&ppt=hp&ppn=homepage&ssid=2et7gw9prk0000001620198695774&qH=7b7504afcaf2e1ea">Click here</a>
+                        </span>
+                    </div>
+                    <div class="result-warning">
+                        <span class="result-msg">
+                            By clicking above button, you will be redirected to an external site!
+                        </span>
+                    </div>
+                </div>
+            </div>
+-->
+        </div>
+        <div class="container-fluid shade-2"></div>
+        <div class="container-fluid footer">
+            <div class="row foot-1">
+                <div class="col-6 fnavs">
+                    <a href="#">
+                        Top
+                    </a>
+                    <a href="contact.html">
+                        Contact us
+                    </a>
+                </div>
+                <div class="col-6 fsocial">
+                    <a href="https:\\www.instagram.com"><i class="bi bi-instagram"></i></a>
+                    <a href="https:\\www.facebook.com"><i class="bi bi-facebook"></i></a>
+                    <a href="https:\\www.twitter.com"><i class="bi bi-twitter"></i></a>
+                </div>
+            </div>
+            <div class="row foot-2">
+                <div class="col-12">
+                    Copyright &copy; modern devs 2021
+                </div>
+
+            </div>
+        </div>
+        <div class="loading">
+            <div class="loader">
+                <div class="lds-hourglass"></div>
+            </div>
+            <div class="load-text">
+                LOADING
+            </div>
+        </div>
+		<script type="text/javascript" src="../bundle.js"></script>
+    </body>
+</html>

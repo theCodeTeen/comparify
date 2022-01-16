@@ -1,0 +1,143 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="HandheldFriendly" content="true"/>
+        <meta name="MobileOptimized" content="320"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <title>Comparify</title>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css">
+        <link rel="stylesheet" href="./../css/index.css">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css">
+    </head>
+    <body>
+        <div class="container-fluid header">
+            <div class="row logo-nav-row">
+                <div class="col-3">
+                    <img src="./../images/colorLogoCropped.jpg">
+                </div>
+                <div class="col-3">
+                </div>
+                <div class="col-6 ncover">
+                    <a class="nlink" href="#catg"><i class="bi bi-bookmark-star-fill"></i> Categories</a>
+                    <a class="nlink" href="contact.html"><i class="bi bi-person-lines-fill"></i> Contact us</a>
+                    <div class="dropdown-nav ">
+                        <i class="bi bi-list"></i>
+                        <div class="nav-options nav-toggler">
+                            <a class="nlink" id="a1" href="#catg"><i class="bi bi-bookmark-star-fill"></i> Categories</a>
+                            <a class="nlink" id="a2" href="contact.html"><i class="bi bi-person-lines-fill"></i> Contact us</a>
+                        </div>
+                    </div>
+                    <!-- <a class="nlink" href="login.html">
+                        <span class="loginBtn">Login</span>
+                    </a> -->
+                </div>
+            </div>
+            <div class="row search-row">
+                <div class="col-12">
+                    <h1 class="searchText">
+                        <!-- Wanna Buy Something -->
+                         <!-- Compare Buy Fair Surf Less in that Mess  -->
+                    </h1>
+                </div>
+                <div class="col-12 search" style="font-size:0px;">
+					<select name="sort" class="sortingBtn" id="sort">
+						<Option value="" selected="selected" >Sort By</Option>
+						<option value="rating">Rating</option>
+  						<option value="price">Price</option>
+					</select>
+                    <input type="text" placeholder="search product" id="searchbar">
+                    <a href="#"id="myBtn" >
+                        <span class="submitBtn"  >                                    
+                            <i class="bi bi-search"></i>
+                        </span>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="container-fluid main" id="catg">
+            <div class="row shade-2" id="catg"></div>
+            <div class="row category-row" >
+                <div class="col-md-4 col-sm-6 category-col" data-name="electronics">
+                    <img src="./../images/new-electronic.jpeg">
+                    <span class="tooltiptext">electronics</span>
+                </div>
+                <div class="col-md-4 col-sm-6 category-col" data-name="largeAppliances">
+                    <img src="./../images/new-largeAppliances.jpg">
+                    <span class="tooltiptext">largeAppliances</span>
+
+                </div>
+                <div class="col-md-4 col-sm-6 category-col" data-name="furniture">
+                    <img src="./../images/new-furniture.jpg">
+                    <span class="tooltiptext">furniture</span>
+                </div>
+                <div class="col-md-4 col-sm-6 category-col" data-name="clothing">
+                    <img src="./../images/new-clothing.jpg">
+                    <span class="tooltiptext">clothing</span>
+                </div>
+                <div class="col-md-4 col-sm-6 category-col" data-name="toy">
+                    <img src="./../images/new-toy.jpg">
+                    <span class="tooltiptext">toy</span>
+                </div>
+                <div class="col-md-4 col-sm-6 category-col" data-name="books"> 
+                    <img src="./../images/new-books.jpg">
+                    <span class="tooltiptext">books</span>
+                </div>
+            </div>
+            <!-- <div class="row category-row">
+                
+            </div> -->
+        <div class="row shade"></div>
+            <div class="row advert-head">
+                <div class="col-12">
+                    <h3>SOME PRODUCT HIGHLIGHT'S</h3>
+                </div>
+                
+            </div>
+            <div class="row advert-row">
+                <div class="col-md-4 advert-col">
+                    <a href="#" id="advert1-a"><img src="./../images/advertisement.png" id="advert1"></a>
+                </div>
+                <div class="col-md-4 advert-col">
+                    <a href="#" id="advert2-a"><img src="./../images/advertisement.png" id="advert2"></a>
+                </div>
+                <div class="col-md-4 advert-col">
+                    <a href="#" id="advert3-a"><img src="./../images/advertisement.png" id="advert3"></a>
+                </div>
+            </div>
+            <div class="row shade-3"></div>
+        </div>
+        <div class="container-fluid footer">
+            <div class="row foot-1">
+                <div class="col-6 fnavs">
+                    <a href="#">
+                        Top
+                    </a>
+                    <a href="contact.html">
+                        Contact us
+                    </a>
+                </div>
+                <div class="col-6 fsocial">
+                    <a href="https:\\www.instagram.com"><i class="bi bi-instagram"></i></a>
+                    <a href="https:\\www.facebook.com"><i class="bi bi-facebook"></i></a>
+                    <a href="https:\\www.twitter.com"><i class="bi bi-twitter"></i></a>
+                </div>
+            </div>
+            <div class="row foot-2">
+                <div class="col-12">
+                    Copyright &copy; modern devs 2021
+                </div>
+
+            </div>
+        </div>
+        <div class="loading">
+            <div class="loader">
+                <div class="lds-hourglass"></div>
+            </div>
+            <div class="load-text">
+                LOADING
+            </div>
+        </div>
+		<script type="text/javascript" src="../bundle.js"></script>
+    </body>
+</html>

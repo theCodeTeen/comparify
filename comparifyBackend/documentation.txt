@@ -1,0 +1,159 @@
+//THIS DOCUMENT CONTAINS DOCUMENTATION FOR THE COMARIFYAPI CREATED BY DHARMIK BHADRA
+
+
+Base URL: https://serene-savannah-65674.herokuapp.com
+
+
+
+Various endpoints with method and description:
+
+
+Endpoint: https://serene-savannah-65674.herokuapp.com/api/user/view
+Methods:
+POST:
+Body contents:
+pageName- name of page for which you want to add view. This field can only contain ['home','contact','login','results']
+Response:
+status- it contains success if executed succesfully or will contain fail or error depending on situation!
+view-In case of success, this field will contain the created view object.
+This method is used to CREATE A VIEW in database, everytime ['home','contact','login','results'] either of the page is loaded
+
+
+Endpoint: https://serene-savannah-65674.herokuapp.com/api/admin/view
+Methods:
+GET:
+Response:
+status- it contains success if executed succesfully or will contain fail or error depending on situation!
+viewCount-In case of success, this field will contain viewCount number.
+This method is used to GET VIEW COUNT which is used on ADMIN DASHBOARD page. As it is only accessible to admin, you need to be LOGGED IN to use this method on given endpoint
+
+
+
+Endpoint: https://serene-savannah-65674.herokuapp.com/api/user/search?productName=${product-name}&sortBy=${sort-by}
+Methods:
+GET:
+Response:
+length- it contains the number of search results obtained
+data- it contains array of search result objects obtained.Each result will contain {_id,imgurl,title,price,rating,link}
+This method is used to GET SEARCH RESULTS for ${product-name}, sorted as described in ${sort-by}.${sort-by} can only have 2 values : 1)price 2)rating
+
+
+Endpoint: https://serene-savannah-65674.herokuapp.com/api/admin/search
+Methods:
+GET:
+Response:
+status- it contains success if executed succesfully or will contain fail or error depending on situation!
+searchCount-In case of success, this field will contain searchCount number.
+This method is used to GET NO OF SEARCHES which is used on ADMIN DASHBOARD page.As it is only accessible to admin, you need to be LOGGED IN to use this method on given endpoint
+
+
+
+Endpoint: https://serene-savannah-65674.herokuapp.com/api/user/redirect
+Methods:
+POST:
+Body contents:
+redirectTo- Product URL where a user will get redirect after clicking a product.For eg- www.amazon.com/products/iphone-12
+Response:
+status- it contains success if executed succesfully or will contain fail or error depending on situation!
+redirect-In case of success, this field will give you redirect object back!
+This method is used to CREATE A REDIRECT in database, everytime user clicks a product from results page
+
+
+Endpoint: https://serene-savannah-65674.herokuapp.com/api/admin/redirect
+Methods:
+GET:
+Response:
+status- it contains success if executed succesfully or will contain fail or error depending on situation!
+redirectCount-In case of success, this field will contain redirectCount number.
+This method is used to GET REDIRECT COUNT which is used on ADMIN DASHBOARD page. As it is only accessible to admin, you need to be LOGGED IN to use this method on given endpoint
+
+
+
+Endpoint: https://serene-savannah-65674.herokuapp.com/api/user/message
+Methods:
+POST:
+Body contents:
+name- Attach the name user has entered to this variable
+email- Attach the email user has entered to this variable
+message- Attach the message user has entered to this variable
+Response:
+status- it contains success if executed succesfully or will contain fail or error depending on situation!
+data-In case of success, this field will message object!
+This method is used to ADD A MESSAGE in database, which will be further displayed to admin on ADMIN DASHBOARD.
+
+
+Endpoint: https://serene-savannah-65674.herokuapp.com/api/admin/message
+Methods:
+GET:
+Response:
+status- it contains success if executed succesfully or will contain fail or error depending on situation!
+length- In case of success, it will show no of message objects in data!
+data-In case of success, this field will contain array of message objects and each object will contain {_id,name,email,message}!
+This method is used to GET ALL MESSAGES which are displayed in INBOX section in ADMIN DASHBOARD page and MESSAGE COUNT can be obtained which is used in STATISTICS section on ADMIN DASHBOARD page. As it is only accessible to admin, you need to be LOGGED IN to use this method on given endpoint.
+
+DELETE:
+Body contents:
+msgId- Attact the id of the message to be deleted
+Response: status code of 204
+This method is used to DELETE MESSAGE from database when user clicks delete message button.As it is only accessible to admin, you need to be LOGGED IN to use this method on given endpoint.
+
+
+
+Endpoint: https://serene-savannah-65674.herokuapp.com/api/admin/advertisement
+Methods:
+GET:
+Response:
+status- it contains success if executed succesfully or will contain fail or error depending on situation!
+data-In case of success, this field will contain advertisement objects! Each object will have {_id,adType,adUrl,adAltText,adAltUrl}
+This method is used to GET ALL ADVERTISEMENTS, which are displayed on home and admin dashboard page. 
+This method ONLY RETURNS URL of image, attach that URL to base to get image.
+For ex-
+Get request gives you url /adImages/imgxyz.jpg, so attach it to base i.e https://serene-savannah-65674.herokuapp.com to form result url as https://serene-savannah-65674.herokuapp.com/adImages/imgxyz.jpg , add this url to src attribute of img in html!
+
+POST:
+Body contents:
+advertImage- Attach the image of the advertisement to this variable
+adAltUrl- Attach the url on which the user should be redirected on clicking the advertisement
+adType- Attach the type i.e on which position this advertisement is to be added i.e [1,2,3]. This key can have only 3 values [advert1,advert2,advert3] representing positions [1,2,3] respectively.
+Response:
+status- it contains success if executed succesfully or will contain fail or error depending on situation!
+newadvert-In case of success, this field will give you new advertisement object back!
+This method is used to add a new advertisement from ADMIN DASHBOARD page.As it is only accessible to admin, you need to be LOGGED IN to use this method on given endpoint.NOTE: The body of this post request is not "application/json" but it is a "form-data".
+
+PATCH:
+Body contents:
+adAltUrl- Attach the url on which the user should be redirected on clicking the advertisement
+adType- Attach the type i.e on which Advertisement this adAltUrl should be attached i.e [1,2,3]. This key can have only 3 values [advert1,advert2,advert3] representing positions [1,2,3] respectively.
+Response:
+status- it contains success if executed succesfully or will contain fail or error depending on situation!
+adAltUrl-In case of success, this field will give you updated adAltUrl!
+This method is used to update the adAltUrl i.e the Url on which the user will be redirected when clicking on advertisement!As it is only accessible to admin, you need to be LOGGED IN to use this method on given endpoint.
+
+DELETE:
+Body contents:
+adType- Attach the type i.e on which position this advertisement is to be deleted i.e [1,2,3]. This key can have only 3 values [advert1,advert2,advert3] representing positions [1,2,3] respectively.
+Response:status code of 204
+This method is used to delete an advertisement when admin clicks on delete button in manage advertisements section on ADMIN DASHBOARD page.As it is only accessible to admin, you need to be LOGGED IN to use this method on given endpoint.
+
+
+
+Endpoint: https://serene-savannah-65674.herokuapp.com/api/admin/login
+Methods:
+POST:
+Body contents:
+username- Attach the username user has entered to this variable
+password- Attach the password user has entered to this variable
+Response:
+status- it contains success if executed succesfully or will contain fail or error depending on situation!
+message- In case of success, it will contain 'logged in succesfully!'
+This method is used to LOGIN a admin! When login is successful, response will contain a httpOnly cookie with jwt and a status code of 200
+
+
+Endpoint: https://serene-savannah-65674.herokuapp.com/api/admin/logout
+Methods:
+GET:
+Response:
+status- it contains success if executed succesfully or will contain fail or error depending on situation!
+message- In case of success, it will contain 'Logout successful!'
+This method is used to logout the admin when LOGOUT button is clicked on ADMIN DASHBOARD! As it is only accessible to admin, you need to be LOGGED IN to use this method on given endpoint.
+

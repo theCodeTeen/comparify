@@ -1,0 +1,157 @@
+
+.header{
+    margin: 10px 0;
+    height: 140px;
+}
+.row{
+    height: 100%;
+}
+.logo-cover{
+    text-align: center;
+    margin-top: 20px;
+}
+.logo-img{
+    height: 85%;
+    width: 45%;
+}
+
+
+.introduction-cover,.covid-warning-cover{
+    height: 44px;
+    text-align: center;
+    background-color:#1167b1;
+    color: white;
+}
+.introduction,.covid-warning{
+  width: 70%;
+  margin: 0 auto;
+  padding:10px auto;
+  font-size: 15px;
+  line-height: 20px;
+}
+
+.buttons-cover{
+    height: 370px;
+    text-align: center;
+    background-color: #03254c;
+}
+.button-area{
+    margin: 0 auto;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+}
+.main-buttons{
+    margin-top: 135px;
+    height: 70px;
+    background-color: white;
+    color:  #1167b1;
+    font-size: 30px;
+    font-weight:lighter;
+    border-radius: 10px;
+    width: 50%;
+}
+.main-buttons:hover{
+    background-color: white;
+    color:  #03254c;
+    font-weight:normal;
+}
+.main-buttons-description{
+    font-size: 18px;
+    font-weight: bold;
+    color: white;
+}
+.footer{
+    font-size: 13px;
+    text-align: center;
+    vertical-align: middle;
+}
+.copyright{
+    margin-top: 7px;
+}
+
+@media (max-width: 1200px){
+    .introduction,.covid-warning{
+        font-size :13px;
+    }
+}
+@media (max-width: 1050px){
+    .introduction,.covid-warning{
+        width: 80%;
+    }
+    .logo-cover{
+        margin-top: 20px;
+    }
+    .logo-img{
+        height: 85%;
+        width: 50%;
+    }
+    .main-buttons{
+        font-size: 26px;
+    }
+}
+@media (max-width: 900px){
+    .introduction,.covid-warning{
+        width: 95%;
+    }
+    .header{
+        height: 130px;
+    }
+    .logo-img{
+        width: 55%;
+    }
+    .main-buttons{
+        font-size: 22px;
+    }
+}
+@media (max-width: 766px){
+    .introduction-cover,.covid-warning-cover{
+        height: 59px;
+    }
+    .introduction,.covid-warning{
+        width: 100%;
+    }
+    .logo-img{
+        height: 80%;
+        width: 40%;
+    }
+    .button-area{
+        height: 50%;
+    }
+    .main-buttons{
+        margin-top: 50px;
+        width: 60%;
+        height:60px ;
+        font-size: 25px;
+    }
+}
+@media (max-width: 620px){
+    .introduction-cover,.covid-warning-cover{
+        height: 59px;
+    }
+    .main-buttons{
+        width: 70%;
+    }
+}
+@media (max-width: 530px){
+    .introduction-cover,.covid-warning-cover{
+        height: 80px;
+    }
+    .logo-img{
+        width: 50%;
+    }
+    .main-buttons{
+        width: 80%;
+    }
+}
+@media (max-width: 380px){
+    .introduction,.covid-warning{
+        font-size :12px;
+    }
+    .introduction-cover,.covid-warning-cover{
+        height: 100px;
+    }
+    .logo-img{
+        width: 65%;
+    }
+}
